@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">VocabTest</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_test_vocab">TestVocab</string>
+    <string name="curr_word">Current Word</string>
+    <string name="curr_score">Current Score</string>
+    <string name="banner">So you think you know them words?</string>
+    <string name="title_activity_results_view">Results</string>
+
+</resources>

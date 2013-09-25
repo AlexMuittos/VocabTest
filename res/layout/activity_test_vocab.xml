@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_width="fill_parent" android:layout_height="fill_parent"
+ android:orientation="vertical">
+ 
+ <TextView android:id="@+id/word"
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content" 
+     android:padding="10dp"
+     android:text="@string/curr_word" 
+     android:textStyle="bold"
+     android:textSize="23sp" />
+ <!-- insert this with code? -->
+ <View          
+      android:layout_width="fill_parent" 
+      android:layout_height="2dp" 
+      android:background="?android:attr/listDivider" />
+ 
+ <ListView 
+     android:id="@+id/meanings" 
+     android:choiceMode="singleChoice"
+     android:dividerHeight="2dp" 
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:cacheColorHint="#00000000" />
+ <View          
+      android:layout_width="fill_parent" 
+      android:layout_height="2dp" 
+      android:background="?android:attr/listDivider" />
+ 
+  <TextView android:id="@+id/score"
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content" 
+     android:layout_marginTop="30dp"
+     android:layout_marginLeft="90dp"
+     android:padding="10dp"
+     android:text="@string/curr_score" 
+     android:textSize="20sp" />
+
+ <Button
+      android:id="@+id/next_button"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="130dp"
+      android:onClick="onClickNext"
+      android:text="Next"
+      android:textSize="20sp" />
+ 
+</LinearLayout>

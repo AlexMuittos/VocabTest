@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.vocabtest"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.vocabtest" >
+        <activity
+            android:name="com.example.vocabtest.StartTest"
+            android:label="@string/app_name"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+         <!-- configChanges tells system I will handle the listed config changes. This prevents app restart on orientation change -->
+        <activity
+            android:name="com.example.vocabtest.TestVocab"
+            android:label="@string/title_activity_test_vocab"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.example.vocabtest.ResultsView"
+            android:label="@string/title_activity_results_view"
+            android:parentActivityName="com.example.vocabtest.StartTest" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.vocabtest.StartTest" />
+        </activity>
+    </application>
+
+</manifest>
